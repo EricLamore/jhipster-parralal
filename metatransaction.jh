@@ -1,0 +1,12 @@
+entity MetaTransaction {
+    status TansactonsStatus,
+    createdDate LocalDate,
+    lastModifiedDate LocalDate
+}
+
+enum TansactonsStatus {
+ NONE, CREATE, LAUNCH, FAILED, FINISH
+}
+
+
+

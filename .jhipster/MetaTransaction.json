@@ -1,0 +1,28 @@
+{
+    "name": "MetaTransaction",
+    "fields": [
+        {
+            "fieldName": "status",
+            "fieldType": "TansactonsStatus",
+            "fieldValues": "NONE,CREATE,LAUNCH,FAILED,FINISH"
+        },
+        {
+            "fieldName": "createdDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "lastModifiedDate",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190319170119",
+    "entityTableName": "meta_transaction",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

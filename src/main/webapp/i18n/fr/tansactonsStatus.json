@@ -1,0 +1,12 @@
+{
+    "parralalApp": {
+        "TansactonsStatus": {
+            "null": "",
+            "NONE": "NONE",
+            "CREATE": "CREATE",
+            "LAUNCH": "LAUNCH",
+            "FAILED": "FAILED",
+            "FINISH": "FINISH"
+        }
+    }
+}
