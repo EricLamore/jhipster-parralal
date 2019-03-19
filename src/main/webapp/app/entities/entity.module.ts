@@ -4,6 +4,10 @@ import { RouterModule } from '@angular/router';
 @NgModule({
     imports: [
         RouterModule.forChild([
+            {
+                path: 'meta-transaction',
+                loadChildren: './meta-transaction/meta-transaction.module#ParralalMetaTransactionModule'
+            }
             /* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */
         ])
     ],

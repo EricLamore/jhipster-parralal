@@ -1,0 +1,35 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="metaTransaction">
+            <h2><span jhiTranslate="parralalApp.metaTransaction.detail.title">Meta Transaction</span> {{metaTransaction.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="parralalApp.metaTransaction.status">Status</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'parralalApp.TansactonsStatus.' + metaTransaction.status}}">{{metaTransaction.status}}</span>
+                </dd>
+                <dt><span jhiTranslate="parralalApp.metaTransaction.createdDate">Created Date</span></dt>
+                <dd>
+                    <span>{{metaTransaction.createdDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="parralalApp.metaTransaction.lastModifiedDate">Last Modified Date</span></dt>
+                <dd>
+                    <span>{{metaTransaction.lastModifiedDate}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/meta-transaction', metaTransaction.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

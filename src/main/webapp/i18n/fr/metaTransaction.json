@@ -1,0 +1,23 @@
+{
+    "parralalApp": {
+        "metaTransaction": {
+            "home": {
+                "title": "MetaTransactions",
+                "createLabel": "Créer un nouveau Meta Transaction",
+                "createOrEditLabel": "Créer ou éditer un Meta Transaction"
+            },
+            "created": "Un nouveau Meta Transaction a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Meta Transaction avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Meta Transaction avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Meta Transaction {{ id }} ?"
+            },
+            "detail": {
+                "title": "Meta Transaction"
+            },
+            "status": "Status",
+            "createdDate": "Created Date",
+            "lastModifiedDate": "Last Modified Date"
+        }
+    }
+}
